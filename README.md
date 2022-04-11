@@ -1,8 +1,7 @@
-# portfolio2
-Portfolio técnico.
+# Portfolio
 -----------------------------------------------------------------------------------------------------------
 ## Sobre mim
-##### Opa, meu nome é Leandro, tenho 16 anos, sou um estudante do Sesi Senai - São José - Técnico desenvolvimento de sistemas. Gosto de ler mangás e jogar. Faço inglês e pretendo virar um gamerdev.
+### Opa, meu nome é Leandro, tenho 16 anos, sou um estudante do Sesi Senai - São José - Técnico desenvolvimento de sistemas. Gosto de ler mangás e jogar. Faço inglês e pretendo virar um gamerdev.
 -----------------------------------------------------------------------------------------------------------
-## Descrição do Portfólio
+#### Descrição do Portfólio
 ##### Portfólio Primeiro Ano - Técnico (Contém trabalhos feitos durante o ano todo)
