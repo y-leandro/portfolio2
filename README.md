@@ -5,3 +5,8 @@
 -----------------------------------------------------------------------------------------------------------
 ##### Descrição do Portfólio
 ##### Portfólio Técnico (Contém trabalhos feitos durante o ano todo)
+-----------------------------------------------------------------------------------------------------------
+## 1 trimestre 
+
+### [Fundamentos de Design] (https://github.com/y-leandro/portfolio2/tree/main/Fundamentos%20de%20Design)
+
