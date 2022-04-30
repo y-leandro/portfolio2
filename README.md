@@ -29,3 +29,8 @@
 
 ### [Lógica Computacional](https://github.com/y-leandro/portfolio2/tree/main/L%C3%B3gica%20Computacional)
 
+###### [Nota média de aluno](https://github.com/y-leandro/portfolio2/blob/main/L%C3%B3gica%20Computacional/M%C3%A9dia%20Nota)
+
+###### [Númeors primos](https://github.com/y-leandro/portfolio2/blob/main/L%C3%B3gica%20Computacional/N%C3%BAmeros%20Primos)
+
+###### [Calculo de P.A.](https://github.com/y-leandro/portfolio2/blob/main/L%C3%B3gica%20Computacional/P.A)
