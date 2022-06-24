@@ -36,4 +36,6 @@
 [Calculo de P.A.](https://github.com/y-leandro/portfolio2/blob/main/L%C3%B3gica%20Computacional/P.A)
 
 -----------------------------------------------------------------------------------------------------------
+## 2 trimestre 
 
+###[Autoria](https://github.com/y-leandro/portfolio2/tree/main/Autoria)
