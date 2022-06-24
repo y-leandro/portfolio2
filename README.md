@@ -38,4 +38,4 @@
 -----------------------------------------------------------------------------------------------------------
 ## 2 trimestre 
 
-###[Autoria](https://github.com/y-leandro/portfolio2/tree/main/Autoria)
+### [Autoria](https://github.com/y-leandro/portfolio2/tree/main/Autoria)
