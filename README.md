@@ -38,4 +38,4 @@
 -----------------------------------------------------------------------------------------------------------
 ## 2 trimestre 
 
-### [Autoria (Fundamentos de TI)](https://github.com/y-leandro/portfolio2/tree/main/Autoria)
+### [Autoria]
