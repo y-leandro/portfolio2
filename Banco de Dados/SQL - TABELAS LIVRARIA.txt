@@ -1,0 +1,72 @@
+CREATE TABLE funcionarios(
+  codFuncionario varchar(11) PRIMARY key not NULL,
+  nome varchar (40) not null,
+  cargo varchar (20) not null,
+  salario float Not null
+  );
+  
+  INSERT INTO funcionarios
+  (codfuncionario, nome, cargo, salario)
+  VALUES
+  ("1111177111", "carlos jose mello", "gerente",12349.38),
+  ("12121212123", "sabrina santos aurelio", "caixa",1340.53),
+  ("33332333321", "paulo antonio santos", "vendedor", 1112.49);
+
+SELECT * from funcionarios
+
+CREATE TABLE fornecedor(
+  codFornecedor varchar(10) PRIMARY key not null,
+  nome varchar(40) not null,
+  local varchar(20) not null,
+  telefone varchar(17) not null
+  );
+  
+  INSERT INTO fornecedor
+  (codFornecedor, nome, local, telefone)
+  VALUES
+  ("2442367942", "Aurora", "Minas Gerais", "+55(31)987321213"),
+  ("9374629473", "Compasso", "São Paulo", "+55(11)900112278"),
+  ("3849274859", "Ubuntu", "Santa Catarina", "+55(48)988789498");
+  
+  SELECT * from fornecedor
+
+CREATE TABLE livros(
+  ISBN varchar (13) PRIMARY key not null,
+  titulo varchar (30) not null,
+  autor varchar (30) not null,
+  genero varchar (10) not null,
+  lancamento date not null,
+  preco float (8) not null,
+  editora varchar (20) not null,
+  codigoFornec varchar (10) not null references fornecedor (codfornecedor)
+  );
+
+  INSERT INTO livros
+  (ISBN, titulo, autor, genero, lancamento, preco, editora, codigofornec)
+  VALUES
+  ("3124321443129", "Quatro vidas de um cachorro", "W.Bruce Cameron", "romance", "2010-07-06", 25.87 , "Pocket ouro", "2442367942"),
+  ("5678876576581", "Sherlock Holmes", "Arthur Conan Doyle", "misterio", "2021-04-29", 47.49, "Principis", "9374629473"),
+  ("3456754312798", "Harry Potter e a Pedra Filosofal", "J.K. Rowling", "fantasia", "2001-11-23", 24.90, "Bloomsbury", "3849274859");
+  
+  SELECT * from livros
+
+CREATE TABLE vendas(
+  codCompra varchar(20) PRIMARY KEY not null,
+  data date,
+  cpfCliente varchar (11) not NULL,
+  isbn varchar(13) not null REFERENCES livros (isbn),
+  codFuncionario varchar(11) not null REFERENCES funcionarios(codfuncionario)
+  );
+  
+ INSERT INTO vendas
+ (codcompra, data, cpfcliente, isbn, codfuncionario)
+ VALUES
+ ("8273640562016A75B53T", "2021-12-30", "12517816914", "3124321443129", "1111177111"),
+ ("7347W673J3874L093W28", "2020-02-12", "28472874875", "5678876576581", "12121212123"),
+ ("273H463782R4892K8329", "2022-07-30", "83748578592", "3456754312798", "33332333321");
+ 
+ SELECT * from vendas
+    
+SELECT * from vendas INNER JOIN livros ON vendas.isbn = livros.isbn 
+INNER JOIN funcionarios ON vendas.codfuncionario = funcionarios.codFuncionario 
+INNER JOIN fornecedor ON livros.codigofornec = fornecedor.codfornecedor
