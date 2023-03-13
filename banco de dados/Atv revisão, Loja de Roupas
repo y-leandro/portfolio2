@@ -1,0 +1,37 @@
+CREATE TABLE roupa(
+modelo varchar(20) not null,
+genero varchar(10), 
+preco float not null,
+codRoupa varchar(20) not null,
+estoque varchar(2) not null,
+PRIMARY KEY (codRoupa)
+)
+
+CREATE TABLE cliente(
+nome varchar(30) not null,
+CPF_Cliente varchar(11) not null,
+telefone varchar(14) not null,
+PRIMARY KEY (CPF_Cliente)
+)
+
+CREATE TABLE funcionario(
+nome varchar(30) not null,
+CPF_Funcionario varchar(11) not null,
+codFuncionario varchar(5) not null,
+turno varchar(10) not null,
+telefone varchar(14) not null,
+PRIMARY KEY (codFuncionario)
+)
+
+CREATE TABLE loja_de_roupas(
+local varchar(40) not null,
+codRoupa varchar(20) not null,
+CNPJ varchar(14) not null,
+CPF_Cliente varchar(11) not null, 
+codFuncionario varchar(5) not null,
+estoque varchar(5) not null,
+PRIMARY KEY (CNPJ),
+FOREIGN KEY (codRoupa) REFERENCES roupa (codRoupas),
+FOREIGN KEY (CPF_Cliente) REFERENCES cliente (CPF_Cliente),
+FOREIGN KEY (codFuncionario) REFERENCES funcionario (codFuncionario)
+)
