@@ -19,7 +19,7 @@ ArrayList<treinoalunos> listaTreino = new ArrayList<>();
 
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+                             
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
