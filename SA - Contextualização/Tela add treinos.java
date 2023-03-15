@@ -55,7 +55,6 @@ static ArrayList<treinoalunos> listagem;
     }
    
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -156,7 +155,7 @@ static ArrayList<treinoalunos> listagem;
         );
 
         pack();
-    }// </editor-fold>                        
+    }                       
 
     private void btnAddTreinoActionPerformed(java.awt.event.ActionEvent evt) {                                             
         addtreinolista();
@@ -169,11 +168,7 @@ static ArrayList<treinoalunos> listagem;
 
     
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -190,9 +185,7 @@ static ArrayList<treinoalunos> listagem;
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(alunoTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new alunoTela().setVisible(true);
@@ -200,7 +193,7 @@ static ArrayList<treinoalunos> listagem;
         });
     }
 
-    // Variables declaration - do not modify                     
+                         
     private javax.swing.JButton ExitAlunoTela;
     private javax.swing.JButton btnAddTreino;
     private javax.swing.JLabel jLabel5;
@@ -213,5 +206,5 @@ static ArrayList<treinoalunos> listagem;
     private javax.swing.JTextArea txtDtreino;
     private javax.swing.JTextField txtPesoAtual;
     private javax.swing.JTextField txtPesoMeta;
-    // End of variables declaration                   
+                       
 }
