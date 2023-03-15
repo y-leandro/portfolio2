@@ -224,20 +224,13 @@ ArrayList<treinoalunos> listaTreino = new ArrayList<>();
 
     
     
-    /*
-        ESPAÇO PARA COMENTAR
-            
     
-   */
     
     
     
     public static void main(String args[]) {
       
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -254,7 +247,7 @@ ArrayList<treinoalunos> listaTreino = new ArrayList<>();
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(telaOpcoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
+        
 
         
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -267,7 +260,7 @@ ArrayList<treinoalunos> listaTreino = new ArrayList<>();
     
      
 
-    // Variables declaration - do not modify                     
+                         
     private javax.swing.JButton ExitTelaOpcoes;
     private javax.swing.JButton btnA;
     private javax.swing.JButton btnAddTreino;
@@ -283,5 +276,4 @@ ArrayList<treinoalunos> listaTreino = new ArrayList<>();
     private javax.swing.JLabel lblPesoAtual;
     private javax.swing.JLabel lblPesoMeta;
     private javax.swing.JTextPane txttreinosT;
-    // End of variables declaration                   
 }
